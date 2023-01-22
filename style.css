@@ -4,15 +4,7 @@
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.heading{
-    border-radius: 10px;
-    padding: 20px 100px;
-    background-color: #e24c56;
-    color: #fff;
-    margin-bottom: 150px;
-    text-transform: uppercase;
-    font-size: 50px;
-}
+
 .box{
     display: flex;
     justify-content: center;
@@ -57,7 +49,7 @@
     }
 }
 .girf_container{
-    
+    margin-top: 200px;
     animation: bound ease-in 1s infinite;
 }
 @keyframes bound {
