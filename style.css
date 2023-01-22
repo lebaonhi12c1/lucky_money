@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.heading{
+    border-radius: 10px;
+    padding: 20px 100px;
+    background-color: #e24c56;
+    color: #fff;
+    margin-bottom: 150px;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url('https://img.freepik.com/free-vector/flat-chinese-new-year-background_23-2149239281.jpg?w=2000');
+    /* background-image: url('https://hinhanhdephd.com/wp-content/uploads/2019/02/hinh-nen-phao-hoa-dong-gif-1.gif'); */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all ease-in-out 0.2s;
+
+}
+
+.girf{
+    position: relative;
+    height: 180px;
+    width: 400px;
+    transform: rotate(90deg);
+    user-select: none;
+}
+.girf img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform-style: preserve-3d;
+    transform-origin: center;
+    transform: rotateY(60) translateZ(500px);
+    box-shadow: rgb(246, 255, 0) 10px 0px 11px 1px;
+}
+@keyframes animate {
+    0%{
+        transform: perspective(1000px) rotateX(0);
+    }
+    100%{
+        transform: perspective(1000px) rotateX(360deg);
+    }
+}
+.girf_container{
+    
+    animation: bound ease-in 1s infinite;
+}
+@keyframes bound {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
+.piece_box{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    border-radius: 5px;
+    flex-direction: column;
+}
+.piece{
+    height: 100%;
+    width: 100%;
+    /* https://img.pikbest.com/origin/06/52/76/23MpIkbEsTY4s.jpg!w700wp */
+    background-image: url('https://img.pikbest.com/origin/06/52/76/23MpIkbEsTY4s.jpg!w700wp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: rgb(246, 255, 0) 10px 0px 11px 1px;
+}
+.left{
+    border-bottom: yellow 5px solid;
+
+}
+.right{
+    border-top: yellow 5px solid;
+}
+.btn_open{
+    color: #fff;
+    padding: 10px 20px;
+    background-color: red;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    margin-top: 180px;
+    border-radius: 5px;
+}
+.btn_open:hover{
+    background-color: tomato;
+    transition: all ease-in 0.1s;
+
+}
+.btn_open:active{
+    background-color: yellow;
+    color: #000;
+}
+
+/* .piece_active_left{
+    transform: translateY(-100px);
+    transition: transfrom ease-in-out 0.5s;
+}
+.piece_active_right{
+    transform: translateY(100px);
+    transition: transfrom ease-in-out 0.5s;
+} */
+.girf_logo{
+    z-index: 10;
+}
