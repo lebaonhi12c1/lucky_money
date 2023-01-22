@@ -6,6 +6,7 @@
 }
 
 .box{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,7 +90,7 @@
 .right{
     border-top: yellow 5px solid;
 }
-.btn_open{
+.btn_primary{
     color: #fff;
     padding: 10px 20px;
     background-color: red;
@@ -99,12 +100,12 @@
     margin-top: 180px;
     border-radius: 5px;
 }
-.btn_open:hover{
+.btn_primary:hover{
     background-color: tomato;
     transition: all ease-in 0.1s;
 
 }
-.btn_open:active{
+.btn_primary:active{
     background-color: yellow;
     color: #000;
 }
@@ -119,4 +120,17 @@
 } */
 .girf_logo{
     z-index: 10;
+}
+.btn_reload{
+    display: none;
+}
+@media (max-width: 500px) {
+    .btn_primary{
+        position: absolute;
+        /* top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%); */
+        bottom: 50px;
+
+    }
 }

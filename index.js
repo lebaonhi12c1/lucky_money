@@ -35,5 +35,12 @@ $(document).ready(function () {
             'background-image': 'url("https://hinhanhdephd.com/wp-content/uploads/2019/02/hinh-nen-phao-hoa-dong-gif-1.gif")'
         });
         $('#girf_container').removeClass('girf_container');
+        $('.btn_reload').css({
+            'display': 'block'
+        });
+    });
+    $('.btn_reload').click(function (e) { 
+        e.preventDefault();
+        document.location.reload()
     });
 });
